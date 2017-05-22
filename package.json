@@ -11,7 +11,9 @@
     "server": "node server",
     "preinstall": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "start": "node server",
-    "postinstall": "echo installation finish"
+    "postinstall": "echo installation finish",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "Javier Valencia Romero",
@@ -66,9 +68,11 @@
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.14.0",
-    "webpack-hot-middleware": "^2.2.0"
+    "webpack-hot-middleware": "^2.2.0",
+    "snyk": "^1.30.1"
   },
   "engines": {
     "node": "5.2.0"
-  }
+  },
+  "snyk": true
 }
