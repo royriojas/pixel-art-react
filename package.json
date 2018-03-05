@@ -63,7 +63,7 @@
     "redux-undo": "^0.5.0",
     "temp": "^0.8.3",
     "twitter": "^1.2.5",
-    "webpack": "^1.12.9",
+    "webpack": "^2.2.0",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.14.0",
     "webpack-hot-middleware": "^2.2.0"
