@@ -11,7 +11,9 @@
     "server": "node server",
     "preinstall": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "start": "node server",
-    "postinstall": "echo installation finish"
+    "postinstall": "echo installation finish",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "Javier Valencia Romero",
@@ -23,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "babel": "^5.8.21",
+    "babel": "^6.0.0",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-plugin-react-transform": "^1.1.0",
@@ -35,7 +37,7 @@
     "chai": "^3.4.1",
     "chai-immutable": "^1.5.3",
     "cookie-parser": "^1.4.0",
-    "copy-webpack-plugin": "^0.3.3",
+    "copy-webpack-plugin": "^2.0.0",
     "cors": "^2.7.1",
     "express": "^4.13.1",
     "express-session": "^1.11.3",
@@ -52,7 +54,7 @@
     "react": "^0.14.3",
     "react-addons-css-transition-group": "^0.14.6",
     "react-alert": "^1.0.14",
-    "react-color": "^1.3.0",
+    "react-color": "^2.2.3",
     "react-cookie-banner": "0.0.11",
     "react-dom": "^0.14.3",
     "react-hot-loader": "^1.3.0",
@@ -66,9 +68,11 @@
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.14.0",
-    "webpack-hot-middleware": "^2.2.0"
+    "webpack-hot-middleware": "^2.2.0",
+    "snyk": "^1.88.2"
   },
   "engines": {
     "node": "5.2.0"
-  }
+  },
+  "snyk": true
 }
