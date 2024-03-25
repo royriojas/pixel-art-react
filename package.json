@@ -64,8 +64,8 @@
     "temp": "^0.8.3",
     "twitter": "^1.2.5",
     "webpack": "^1.12.9",
-    "webpack-dev-middleware": "^1.2.0",
-    "webpack-dev-server": "^1.14.0",
+    "webpack-dev-middleware": "^5.3.4",
+    "webpack-dev-server": "^4.0.0",
     "webpack-hot-middleware": "^2.2.0"
   },
   "engines": {
